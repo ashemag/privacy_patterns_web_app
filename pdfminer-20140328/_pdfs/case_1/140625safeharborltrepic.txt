@@ -1,0 +1,275 @@
+ 
+
+UNITED STATES OF AMERICA 
+
+FEDERAL TRADE COMMISSION 
+
+WASHINGTON, D.C. 20580 
+
+ 
+ 
+
+           June 19, 2014 
+
+ 
+
+ 
+ 
+  Office of the Secretary 
+ 
+
+ 
+
+ 
+
+ 
+Marc Rotenberg, Executive Director 
+Julia Horwitz, Consumer Protection Counsel 
+Khaliah Barnes, Administrative Law Counsel 
+Electronic Privacy Information Center 
+1718 Connecticut Avenue, NW 
+Suite 200 
+Washington, D.C. 20009 
+ 
+Re:  
+
+In the Matter of Apperian, Inc., File No. 1423017; Atlanta Falcons Football Club 
+LLC , File No. 1423018; Baker Tilly Virchow Krause, LLP, File No. 1423019; 
+BitTorrent, Inc., File No. 1423020; Charles River Laboratories International, Inc., 
+File No. 1423022; DataMotion, Inc., File No. 1423023; DDC Laboratories, Inc., File 
+No. 1423024; Level 3 Communications, LLC, File No. 1423028; PDB Sports, Ltd. 
+d/b/a Denver Broncos Football Club, File No. 1423025; Reynolds Consumer 
+Products Inc., File No. 1423030; The Receivable Management Services Corporation, 
+File No. 1423031; and Tennessee Football, Inc., File No. 1423032. 
+
+ 
+Dear Mr. Rotenberg, Ms. Horwitz, and Ms. Barnes: 
+
+ 
+
+ 
+
+Thank you for your comment on behalf of the Electronic Privacy Information Center 
+
+(“EPIC”) regarding the Federal Trade Commission’s (“Commission” or “FTC”) consent 
+agreements in the above-entitled proceedings.  The Commission has placed your comment on the 
+public record pursuant to Rule 4.9(b)(6)(ii) of the Commission’s Rules of Practice, 16 C.F.R. § 
+4.9(b)(6)(ii), and has given it serious consideration.   
+
+In these 12 cases, the Commission alleges that Respondents violated Section 5 of the 
+
+Federal Trade Commission Act (“FTC Act”) by misrepresenting that they were current 
+participants in the U.S.-EU Safe Harbor framework and/or U.S.-Swiss Safe Harbor framework 
+(collectively “Safe Harbor framework”) when in fact each company allowed its self-certification 
+to lapse.  In addition, the proposed complaints against Apperian, Inc., Baker Tilly Virchow 
+Krause, LLP, DataMotion, Inc., and the Receivable Management Services Corporation allege 
+that these companies deceptively displayed the Safe Harbor Certification Mark.  The complaints 
+do not allege that any Respondent committed any substantive violations of the privacy principles 
+of the Safe Harbor framework. 
+ 
+
+The proposed orders prohibit each company from misrepresenting the extent to which 
+
+each is a member of, adheres to, complies with, is certified by, is endorsed by, or otherwise 
+participates in any privacy or security program sponsored by the government or any other self-
+
+regulatory or standard-setting organization, including, but not limited to, the U.S.-EU Safe 
+Harbor Framework or the U.S.-Swiss Safe Harbor Framework to directly address the complaint 
+allegations in these cases.  The proposed orders, which terminate after 20 years, include standard 
+record-keeping and service provisions, as well as requirements for each Respondent to file a 
+compliance report with the Commission.   
+ 
+
+These cases reflect an ongoing effort by the Commission to enforce compliance with the 
+
+Safe Harbor framework.  The Commission brought 10 previous cases against companies for 
+misrepresentations related to Safe Harbor.  From late 2009 through early 2010, the Commission 
+brought a series of cases against six companies that violated Section 5 by falsely representing on 
+their websites that they held current self-certifications to the Safe Harbor Framework.1  In 
+addition, in 2011, the Commission’s action against Balls of Kryptonite included a count alleging 
+the respondent violated Section 5 by misrepresenting its status with Safe Harbor.2  Finally, the 
+FTC has brought Section 5 cases against Google, Facebook and Myspace that included counts 
+relating to substantive noncompliance with the Safe Harbor principles.3 
+ 
+
+Your comment notes EPIC’s support of the 12 proposed consent orders but urges the 
+Commission to make a number of revisions to the orders.  Specifically, you request that the 
+Commission:  (1) require Respondents to comply with the President’s Consumer Privacy Bill of 
+Rights; (2) publish the Respondents’ compliance reports; and (3) strengthen the sanctions against 
+respondent DDC Laboratories, specifically.   
+ 
+
+Your comment recommends that the Commission require Respondents to conform to the 
+
+substantive protections of the President’s Consumer Privacy Bill of Rights (“CPBR”).  The 
+Commission supports the goals laid out in the CPBR and highlighted a number of these 
+principles in our March 2012 Privacy Report, “Protecting Consumer Privacy in an Era of Rapid 
+
+                                                 
+1 Directors Desk LLC, No. C-4281 (Jan. 12, 2010), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2010/01/100119directorsdeskcmpt.pdf; World Innovators, 
+Inc., No. C-4282 (F.T.C. Jan. 12, 2010), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2010/01/100119worldinnovatorscmpt.pdf; Collectify LLC, 
+No. C-4272 (F.T.C. Nov. 9, 2009), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2010/01/100119collectifycmpt.pdf; ExpatEdge Partners, 
+LLC, No. C-4269 (F.T.C. Nov. 9, 2009), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2010/01/100119expatedgecmpt.pdf; Onyx Graphics, Inc., No. 
+C-4270 (F.T.C. Nov. 9, 2009), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2010/01/100119onyxgraphicscmpt.pdf; Progressive 
+Gaitways LLC, No. C-4271 (Nov. 9, 2009), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2010/01/100119progaitwayscmpt.pdf.  
+2 FTC v. Karnani, No. CV-05276-DDP-E (C.D. Cal., filed May 16, 2011) (alleging that defendants falsely stated 
+that they had self-certified to the Safe Harbor Framework. 
+3 See MySpace, LLC, No. C-4369 (F.T.C. Aug. 13, 2012), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2012/09/120911myspacecmpt.pdf; Facebook, Inc., No. C-
+4365 (F.T.C. Jul. 27, 2012), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2012/08/120810facebookcmpt.pdf; Google Inc., No. C-4336 
+(F.T.C. Oct. 13, 2011), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2011/10/111024googlebuzzcmpt.pdf.  
+
+ 
+
+2 
+
+Change: Recommendations for Businesses and Policymakers.”4  However, the order is designed 
+to address specific conduct as alleged in the complaint—which did not include substantive 
+violations of the Safe Harbor framework—not to impose obligations that may not be tied to such 
+conduct. 
+ 
+
+Your comment further urges the Commission to make Respondents’ compliance reports 
+
+publicly available.  As the Commission has stated with regard to the third-party assessments 
+required by many of our privacy and data security orders, there is a public benefit to providing 
+transparency regarding a company’s compliance with an FTC order.  The public may seek access 
+to compliance reports required by the orders by making a request under the Freedom of 
+Information Act.5  If the compliance reports contain any trade secrets or other confidential 
+commercial or financial information, or information about consumers or other third parties, the 
+Commission is prohibited from disclosing that information.6  Upon receipt of a request for 
+confidential treatment of all or part of the compliance report, the Commission will conduct a 
+careful review to determine whether confidential treatment is warranted.  We will make every 
+effort to be transparent regarding the compliance reports, consistent with the applicable law.  If 
+the Commission determines that a report has been frequently requested, the agency will post 
+such portions as may be released to the public on the FTC’s website. 
+ 
+
+Moreover, you request that the Commission strengthen the sanctions against DDC 
+
+Laboratories (“DDC”) due to the type of consumer data that DDC collects and the fact that “[b]y 
+misrepresenting its compliance with privacy standards, DDC Labs puts highly sensitive, 
+extremely intimate personal data at risk.”  It is important to reiterate that the proposed complaint 
+against DDC alleges that the company misrepresented that it was a current participant in the Safe 
+Harbor framework, when, in fact, its self-certification had lapsed.  There was no allegation that 
+DDC substantively violated any of the privacy principles of the Safe Harbor framework or that 
+personal data was at risk.  The proposed orders in all 12 cases include fencing-in relief that 
+enjoins the companies from making such misrepresentations in the future.  If they do, or if 
+Respondents violate any other term of the final order, they could be liable for civil monetary 
+penalties of up to $16,000 per violation, or up to $16,000 per day in the case of continuing 
+violations (as provided by Section 5(l) of the FTC Act).  Thus, the order has the effect of 
+requiring the company to abide by the substantive Safe Harbor principles for as long as it 
+chooses to represent that it complies with the Safe Harbor Framework.  In addition, if one of the 
+Respondent companies chooses to leave Safe Harbor, it must continue to apply the Safe Harbor 
+principles to the covered data it collected while participating in the program for as long as it 
+stores, uses, or discloses that data.  Accordingly, the Commission believes that the proposed 
+order appropriately addresses the conduct at issue in this case. 
+
+                                                 
+4 FED. TRADE COMM., Protecting Consumer Privacy in an Era of Rapid Change: Recommendations for Businesses 
+and Policymakers (2012), available at http://www.ftc.gov/os/2012/03/120326privacyreport.pdf.  
+5 5 U.S.C. § 552, et seq. 
+6 15 U.S.C. § 46(f) (“the Commission shall not have any authority to make public any trade secret or any 
+commercial or financial information which is obtained from any person and which is privileged or confidential”); 
+Commission Rule of Practice § 4.10. 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+ 
+
+Finally, you reference past comments that EPIC has submitted to the Commission 
+
+ 
+regarding other settlements and state that the Commission’s failure to implement your proposed 
+changes is:  “(1) contrary to the explicit purpose of the statutory provision that allows the 
+Commission to request comments from the public; (2) contrary to the broader purpose of the 
+Commission to police unfair and deceptive trade practices; and (3) contrary to the interests of 
+American consumers.” (EPIC Comment at 4, references omitted).  The Commission Rules of 
+Practice, 16 C.F.R. § 2.34, do not require that the Commission accept proposed changes filed by 
+commenters.  Rather, the applicable Rule of Practice directs the Commission to receive and 
+consider any “comments or views” concerning the order that may be filed by “any interested 
+person,” and states that, thereafter, the Commission may “withdraw its acceptance of the 
+agreement . . . [and] take such other action as it may consider appropriate.”  The Commission 
+carefully considers, and has a practice of responding to, public comments filed in reference to its 
+administrative settlements.  But only when the Commission determines that the public interest 
+would be best served by amending the consent order does the Commission take such action, 
+which requires the consent of the respondent.  There have been such modifications in a number 
+of matters.7  Where the Commission seeks a modification to which the respondent does not 
+agree, the Commission may proceed to litigation, where a court will ultimately determine what 
+relief is warranted under the FTC Act or other applicable law.  In this case and others in which 
+the Commission has not sought to modify a proposed consent order as recommended by EPIC or 
+another commenter, it is because the Commission has concluded that the public interest is best 
+served by final adoption of the original order. 
+
+In light of the considerations discussed above, the Commission has determined that the 
+
+ 
+public interest would best be served by issuing the Decision and Orders in the above-titled 
+proceedings in final form without any modifications.  The final Decision and Orders and other  
+
+ 
+
+ 
+
+                                                 
+7 See, e.g., Motorola Mobility LLC, No. C-4410 (F.T.C. July 23, 2013) (amending final consent order based on 
+public comments), available at http://www.ftc.gov/enforcement/cases-proceedings/1210120/motorola-mobility-llc-
+google-inc-matter; Phusion Projects, LLC, C-4382 (F.T.C. Feb. 6, 2013) (same), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2013/02/130212phusioncmpt.pdf; Sony BMG Music Entm’t, 
+No. C-4195 (F.T.C. June 28, 2007) (same), available at 
+http://www.ftc.gov/sites/default/files/documents/cases/2007/06/0623019cmp070629.pdf; see also Letter from 
+Deborah L. Feinstein, Federal Trade Commission, to Roxana Tatman, Georgia Department of Community Health 
+(May 20, 2014) (explaining how the Commission is currently weighing its options in a competition matter in light of 
+information received after seeking public comment on a proposed consent order); Letter from Matthew Jarrad, 
+Georgia Department of Community Health, to G. Edward Alexander, North Albany Health Center, In re Request for 
+Letter of Determination Regarding Facility Divestiture, at 2 (June 3, 2014) (referring to the May 20 Feinstein letter), 
+available at 
+http://scni.media.clients.ellingtoncms.com/news/documents/2014/06/04/DET2014033_Determ_Response.pdf. 
+
+ 
+
+4 
+
+relevant materials are available from the Commission’s website at http://www.ftc.gov.  It helps 
+the Commission’s analysis to hear from a variety of sources in its work, and it thanks you again 
+for your comment. 
+ 
+
+By direction of the Commission, Commissioner McSweeny not participating. 
+ 
+ 
+ 
+
+Donald S. Clark 
+Secretary  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5 
+
+
