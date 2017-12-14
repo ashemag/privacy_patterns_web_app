@@ -72,7 +72,7 @@ def crawl(filename):
 				pdf_to_text(_path, filename)
 
 
-#GOAL: script that downloads the first link of each case & turns it into text document 
+#Downloads all pdfs from cases in data.csv and creates .txt version 
 if __name__ == "__main__":
 	tic = time.clock()
 	crawl("data.csv")
