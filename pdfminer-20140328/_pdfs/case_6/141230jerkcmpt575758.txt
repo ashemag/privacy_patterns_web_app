@@ -1,0 +1,775 @@
+ORIGINAL  PUBLIC-REDACTED 
+
+UNITED STATES OF AMERICA 
+FEDERAL TRADE COMMISSION 
+
+OFFICE OF ADMINISTRATIVE LAW JUDGES 
+
+In the Matter of 
+
+Jerk, LLC, a limited liability company, 
+also d/b/a JERK.COM, and 
+
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+_____________________________________ ) 
+
+John Fanning, individually and 
+as  a member of Jerk, LLC, 
+
+Respondents 
+
+PUBLIC 
+
+DOCKET NO. 9361 
+
+NON-PARTY STRIPE, INC.'S MOTION FOR IN CAMERA TREATMENT 
+
+Pursuant to Rule 3.45 of the Federal Trade Commission's Rules of Practice, 16 C.F.R 
+
+§ 3.45(b), non-party Stripe, Inc. ("Stripe") respectfully moves this Court for in camera treatment 
+
+oftwo competitively-sensitive, confidential business documents (the "Confidential Documents"). 
+
+Stripe produced these documents, among others, in response to a third-party subpoena and civil 
+
+investigative demand in this matter.  The Federal Trade Commission ("FTC") has now notified 
+
+Stripe that it intends to introduce six of Stripe's documents, including the Confidential 
+
+Documents, into evidence at the administrative trial in this matter.  See Letter from the Federal 
+
+Trade Commission dated October 15, 2014 (attached as Exhibit A). 
+
+The FTC notified Stripe that intends to seek permanent in camera treatment for five of 
+
+the six Stripe documents, including the Confidential Documents, which contain sensitive 
+
+financial or personal information.1  The Confidential Documents, however, warrant additional 
+
+protection from public disclosure given the sensitive business information and trade secrets they 
+
+contain.  Thus, Stripe submits this Motion requesting permanent in camera treatment of the 
+
+1 The FTC filed it motion on December 23, 2014 and seeks permanent in camera treatment for five Stripe 
+documents CX0421 -CX0425.  Stripe joins the FTC's request for in camera treatment of the personally identifiable 
+information and/or consumer or financial information contained in these documents. 
+
+DWT 25568394vl 0095740-000002 
+
+PUBLIC-REDACTED 
+
+Confidential Documents in their entirety. 
+
+All ofthe materials for which Stripe is seeking in camera treatment are confidential 
+
+business documents, such that if they were to become part of the public record, Stripe would be 
+
+significantly harmed in its ability to compete in the payments processing industry.  For the 
+
+reasons discussed in this motion, Stripe requests that this Court afford its confidential business 
+
+docunlents in camera treatment indefinitely. In support of this motion, Stripe relies on the 
+
+Affidavit of Jon Zieger ("Zieger Declaration"), attached as Exhibit B, which provides additional 
+
+details on the documents for which Stripe is seeking in camera treatment. 
+
+I. 
+
+The Documents for Which Protection is Sought 
+
+Stripe seeks in camera treatment for the following Confidential Documents, copies of 
+
+which are attached as Exhibit C. 
+
+Exhibit 
+No. 
+' 
+CX0421 
+
+.. · 
+
+Document 
+Title/Description 
+Account application 
+dashboard 
+
+. ' 
+
+Date 
+
+2012 
+
+Beginning Bates  Ending Bates  :-
+No. 
+STRIPEOOOO 1 0 
+
+No. · . 
+STRIPE000017 
+
+Cx0422 
+
+Underwriting dashboard 
+
+2012-2014 
+
+STRIPE  000110 
+
+STRIPE  000195 
+
+II. 
+
+Stripes Documents are Secret and Material such that Disclosure Would Result in 
+Serious Injury to Stripe 
+
+In camera treatment of material is appropriate when its "public disclosure will likely 
+
+result in a clearly defined, serious injury to the person, partnership, or corporation requesting" 
+
+such treatment.  16 C.F.R. § 3.45(b).  The proponent demonstrates serious competitive injury by 
+
+showing that the documents are secret and that they are material to the business.  In re General 
+
+Foods Corp., 95 F.T.C. 352, 355 (1980); In re Dura Lube Corp., 1999 F.T.C. LEXIS 255, *5 
+
+(1999).  In this context, courts generally attempt "to protect confidential business information 
+
+from unnecessary airing."  HP. Hood & Sons, Inc.,  58 F.T.C. 1184, 1188 (1961). 
+
+DWT 25568394vl 0095740-000002 
+
+2 
+
+PUBLIC-REDACTED 
+
+In considering both secrecy and materiality, the Court may consider:  (1) the extent to 
+
+which the information is known outside of the business;  (2) the extent to which it is known by 
+
+employees and others involved in the business; (3) the extent of measures taken to guard the 
+
+secrecy of the information; (4) the value of the information to the business and its competitors; 
+
+(5) the amount of effort or money expended in developing the infonnation; and (6) the ease or 
+
+difficulty with which the infonnation could be acquired or duplicated by others.  In re Bristol(cid:173)
+
+Myers Co. , 90 F.T.C. 455, 456-457 (1977) 
+
+The Confidential Documents are both secret and material to Stripe's business as 
+
+discussed in detail in the Zieger Declaration.  In sum, the materials at issue contain information 
+
+of competitive significance to Stripe, such as underwriting data and analysis as well as intemal 
+
+risk assessments of its merchant-customers and applications of proprietary systems and 
+
+processes.  Zieger Declaration at ~~5 -6.  As a payments processor, Stripe depends on its ability to 
+
+evaluate underwriting and risk management prior to engaging its merchant-customers and thus, 
+
+requires intemal evaluations and processes to assess the risk of any such relationships.  Id.  at ~5. 
+
+Thus, it has developed intemal processes to assess risk for which it has spent significant 
+
+resources and that are reflected in its dashboards.  Id. at~ 5-6.  Such information and processes 
+
+are proprietary to Stripe and not publicly known outside of Stripe.  !d.  In addition, the risk of 
+
+fraud and harm to its users from the public disclosure of Stripe's internal risk management and 
+
+underwriting processes is likely.  !d.  Indeed, when Stripe produced the Confidential Documents, 
+
+it took steps to maintain confidentiality by designating the documents "Confidential" and 
+
+produced them for "attorney's eyes only" pursuant to the Protective Order in this case.  Because 
+
+of the highly confidential and proprietary nature of the information and its materiality to Stripe's 
+
+business, in camera treatment is appropriate. 
+
+DWT 25568394v l  0095740-000002 
+
+3 
+
+PUBLIC-REDACTED 
+
+Further, disclosure of the Confidential Documents will result in the loss of a business 
+
+advantage to  Stripe.  See In re Dura Lube Corp., 1999 FTC LEXIS 255 at *7 (Dec. 23, 1999) 
+
+("The likely loss of business advantages is a good example of a 'clearly defined, serious 
+
+injury."').  The Confidential Documents are material to Stripe's internal underwriting and risk 
+
+assessments that it applies in order to compete with other payments processors.  Zieger 
+
+Declaration at ~~5-6.  Making such documents public would result in a loss of business 
+
+advantage that Stripe has built as the result of its own substantial investments in the development 
+
+of its proprietary systems and technical processes. 
+
+Finally,  Stripe's status as a third party is relevant to the treatment of its documents.  The 
+
+FTC has held that " [t]here can be no question that the confidential records of businesses involved 
+
+in Commission proceedings should be protected insofar as possible."  HP. Hood &  Sons,  58 
+
+F.T.C. at 1186.  This is especially so in the case of a third-party, which deserves "special 
+
+solicitude" in its request for in camera treatment for its confidential business information.  See In 
+
+re Kaiser Aluminum &  Chern.  Corp.,  103 FTC 500, 500 (1984) ("As a policy matter, extensions 
+
+of confidential or in camera treatment in appropriate cases involving third party bystanders 
+
+encourages cooperation with future adjudicative discovery requests.").  Stripe's third-party status 
+
+therefore weighs in favor of granting in camera status to the Confidential Documents. 
+
+III. 
+
+The Confidential Documents Contain Trade Secrets, which will Remain Sensitive 
+Over Time and Thus, Permanent In Camera Treatment is Justified 
+
+Given the highly sensitive and technical nature of the information contained in the 
+
+Confidential Documents, Stripe requests that they be given in camera treatment indefinitely? 
+
+The trade secret infonnation contained in the Confidential Documents "is likely to remain 
+
+2  Stripe seeks the same length of time for in camera treatment - permanent - as the FTC is seeking in its own motion 
+for in camera treatment of Stripe' s documents.  To the extent such pennanent treatment is not given, Stripe requests 
+that the period of in camera treatment of the Confidential Documents be no less than 10 years. 
+
+DWT 25568394v l  0095740-000002 
+
+4 
+
+PUBLIC-REDACTED 
+
+sensitive or become more sensitive with the passage oftime" such that the need for 
+
+confidentiality is not likely to decrease over time.  In re Dura Lube Corp. , 1999 FTC LEXIS at 
+
+*7-8.  "Trade secrets"- such as secret formulas and secret technical information- are granted 
+
+more protection than ordinary business documents.  !d. at *5.  Here, as described in the Zieger 
+
+Declaration, the Confidential Documents contain business and trade secrets in the form of 
+
+internal Stripe dashboards, that apply secret formulas and technical processes in connection with 
+
+Stripe' s underwriting and risk assessments that are critical to its ability to offer payments 
+
+processing services.  Zieger Declaration at W 5-7.  The competitive significance of the technical 
+
+formulas and criteria is unlikely to decrease over time and thus, indefinite protection from public 
+
+disclosure is appropriate.  !d. at 1f 7. 
+
+IV.  Conclusion 
+
+For the reasons set forth above and in the accompanying Zieger Declaration, Stripe 
+
+respectfully requests that this Court grant permanent in camera treatment for the Confidential 
+
+Documents in their entirety. 
+
+Dated:  December 29, 2014 
+
+anger 
+
+IGHT TREMAINE LLP 
+
+505 Montgomery Street, Suite 800 
+San Francisco, CA 94111 
+Ph:  415.276.6500 I Fx:  415.276.6599 
+gwenfanger@dwt.com 
+
+Counsel for non-party, STRIPE, INC. 
+
+DWT25568394vl  0095740-000002 
+
+5 
+
+PUBLIC-REDACTED 
+
+STATEMENT REGARDING MEET A..~D CONFER 
+
+The undersigned certifies that counsel for Non-party Stripe, Inc. ("Stripe") notified 
+
+counsel for the parties via email on or about December 22, 2014 that it would be seeking in 
+
+camera treatment of the Confidential Documents.  Both counsel for the Federal Trade 
+
+Commission and Jerk, LLC indicated that they would not object to Stripe's motion.  As of the 
+
+filing of the above motion, counsel for Mr. Fanning has not responded. 
+
+Dated:  December 29,2014 
+
+ger 
+IGHT TREMAINE LLP 
+
+505 Montgomery Street, Suite 800 
+San Francisco, CA 94111 
+Ph:  415.276.6500 I Fx:  415.276.6599 
+gwenfanger@dwt.com 
+
+Counsel for non-patty, STRIPE, INC. 
+
+DWT 25568394vl 0095740-000002 
+
+6 
+
+PUBLlC-RKDACTED 
+
+EXHIBIT A 
+
+United States of America 
+
+FEDERAL TRADE COMMISSION 
+
+WESTERN  REGION 
+
+Sarah Schroeder 
+
+90 l  Market Street, Suite 570 
+San Francisco, CA 94521 
+Phone: (415) 84&-5186 
+
+Email: sschroeder@ftc.gov 
+
+Gwen Fanger 
+Davis Wright Tremaine LLP 
+505 Montgomery Street, Suite 800 
+San Francisco, CA 94111-6533 
+
+October 15, 2014 
+
+Re: 
+
+In the Matter of Jerk. com and John Fanning, Dkt. 9361 
+Notice oflntent to Use Documents 
+
+Dear Ms. Fanger: 
+
+Thank you for Stripe Payments' cooperation in responding to the Federal Trade 
+
+Commission's Civil Investigative· Demand and Complaint Counsel's subpoena for documents 
+relating to Jerk, LLC.  Pursuant to Federal Trade Commission Rule ofPractice 3.45(b), 16 
+C.P.R. § 3.45(b), and Paragraph 7 of the Court's May 28, 2014 Scheduling Order, I am writing to 
+inform you that we intend to introduce the attached materials as  evidence in the adjudicative 
+hearing on January 27, 2015. 
+
+We intend to file a motion seeking in camera treatment of all personally identifiable 
+
+information, including consumers' financial and contact information.  Stripe Payments may also 
+seek in camera treatment for any material it considers confidential by motion to the 
+Administrative Law Judge in accordance with Commission Rules ofPractice 3.45 and 3.22, 16 
+C.P.R.  §§  3.45, 3.22.  The deadline to file a motion for in camera treatment is January 5, 2015. 
+The standards for motions for in camera treatment are set forth in 16 C.P.R.§ 3.45 and explained 
+in In re Dura Lube Corp.,  1999 FTC LEXIS 255 (Dec. 23,  1999); In re Hoechst Marion Roussel, 
+Inc. , 2000 FTC LEXIS 157 (Nov. 22, 2000) and 2000 FTC LEXIS 138 (Sept. 19, 2000); and In 
+re Basic Research, Inc., 2006 FTC LEXIS 14 (Jan. 25, 2006).  Motions must be supported by a 
+declaration or.affidavit by a person qualified to explain the confidential nature of the documents. 
+ln re North Texas Specialty Physicians, 2004 FTC LEXIS 66 (April 23, 2004). 
+
+Please feel free to contact me if you have any questions or intend to file a motion for in 
+
+camera treatment of any documents. 
+
+Sincerely, 
+
+? fJvL~ 
+
+Sarah Schroeder 
+
+PUBLIC-REDACTED 
+
+EXHIBITB 
+
+UNITED STATES OF AMERICA 
+FEDERAL TRADE COMMISSION 
+
+OFFICE OF ADM1NISTRATIVE LAW JUDGES 
+
+In the Matter of 
+
+Jerk, LLC, a limited liability company, 
+also d/b/a JERK.COM, and 
+
+John Fanning, individually and 
+as a member of Jerk,LLC, 
+
+Respondents 
+
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+
+DOCKET NO. 9361 
+
+DECLARATION OF JON ZIEGER IN SUPPORT OF NON-PARTY STRIPE, INC.'S 
+
+MOTION FOR IN CAMERA TREATMENT 
+
+I, Jon Zieger, hereby declare as follows: 
+
+1. 
+
+I am the General Counsel and Corporate Secretary of Stripe, Inc.  ("Stripe").  I 
+
+make this declaration in support ofNon-Party Stripe, Inc.'s Motion for In Camera Treatment 
+
+(the "Motion").  I have personal knowledge of the matters stated herein and, if called upon to do 
+
+so, could competently testify about them. 
+
+2. 
+
+I have reviewed and am familiar with the documents Stripe produced in the 
+
+above-captioned matter in response to a subpoena and civil investigative demand from the 
+
+Federal Trade Commission.  I provided a certification of authenticity as to the produced 
+
+documents, including the documents that are the subject of the Motion.  Given my position at 
+
+Stripe, I am familiar with the type of information contained in the documents at issue and its 
+
+competitive significance to Stripe.  Based on my review of the documents, my knowledge of 
+
+Stripe's business, and my familiarity with the confidentiality protection afforded this type of 
+
+information by Stripe, I submit that the disclosure of these documents to the public and to 
+
+competitors of Stripe would cause serious competitive injury to Stripe. 
+
+DWT 25569789vl 0095740-000002 
+
+3. 
+
+Stripe is a payments processor that provides its customers with a platform on 
+
+which to accept payments online and in mobile apps.  Stripe processes billions of dollars a year 
+
+for thousands of businesses, from newly launched start-ups to Fortune 500 companies.  In order 
+
+to provide these payment services to its customers, Stripe collects and monitors various data, 
+
+including bank and credit card account numbers, tax identification numbers, emails and other 
+
+related financial information necessary to process payments.  Stripe also applies proprietary and 
+
+confidential underwriting and risk management methods and formulas in order to service its 
+
+customers.  Stripe often reviews this information in its internal dashboard applications.  Such 
+
+methods and applications distinguish Stripe's business model from its competitors and are 
+
+critical to its business development and competition strategies. 
+
+4. 
+
+The FTC has informed Stripe that it intends to use six of the documents that 
+
+Stripe produced in response to a subpoena at the administrative hearing in this matter.  Of these 
+
+documents, CX0421  and CX0422 are particularly sensitive and contain confidential business 
+
+information and trade secrets.  As described in the Motion, Stripe seeks permanent in camera 
+
+protection ofthe following documents: 
+
+E:t·hibit  . .. ·. 
+No. 
+CX0421 
+
+.. -_ ... 
+
+Document  __ · · 
+Title!Descrif!tion  ·· · ··  ·· 
+Underwriting dashboard 
+
+Date 
+
+2012 
+
+,-·; __  .. . 
+
+..  .BegimiingBates·· 
+·  No. 
+· -· 
+
+·· -
+
+STRIPEOOOO 1 0 
+
+. En(iing Bates · . 
+N9. 
+. ... '":_·. 
+STRIPEOOOO 17 
+
+Cx0422 
+
+Account application · 
+dashboard 
+
+2012-2014 
+
+STRIPE  00011 0 
+
+STRIPE  000195 
+
+5. 
+
+CX0421  is a snapshot of Stripe's internal underwriting dashboard, which reflects 
+
+the underwriting and risk analysis of merchants who apply to do business with Stripe.  CX0421 
+
+also contains confidential information about Stripe's personnel and how they evaluate the 
+
+customer applications.  Stripe keeps this information in strict confidence because it would be 
+
+DWT 25569789vl 0095740-000002 
+
+2 
+
+harmful to Stripe's ability to analyze the underwriting risk of potential merchant-customers if 
+
+how Stripe determines whether to approve an application is publicly disclosed.  Stripe has 
+
+devoted significant resources to developing the underwriting and risk methodologies and 
+
+technical formulas represented in CX0421.  As a payments processor, Stripe depends on its 
+
+relationships with its customers as well as its ability to evaluate underwriting and risk 
+
+management prior to engaging such relationships.  Thus, it would not only harm Stripe's ability 
+
+to compete with other payments processors if its risk methodology was disclosed, but it also 
+
+would harm consumers if potential merchant-customers fraudulently obtained and misused the 
+
+information.  Stripe does not make its internal dashboard and the information it contains 
+
+available to its  competitors or customers and Stripe does not share this information with non(cid:173)
+
+Stripe personnel in the ordinary course ofbusiness. 
+
+6. 
+
+Similarly, CX0422 is a printout of Stripe's account dashboard, which contains 
+
+information about consumer transactions for a particular merchant account.  Disclosure of 
+
+CX0422 would reveal what systems Stripe uses to process the accounts and charges as well has 
+
+how underwriters at Stripe review risk and make assessments.  Stripe has devoted significant 
+
+resources developing its proprietary processes and technical systems or formulas underlying and 
+
+reflected in CX0422, which represent substantial competitive value to Stripe.  This information 
+
+is not publicly available and Stripe has devoted its resources to protecting the confidentiality of 
+
+the information in CX0422.  Thus, disclosure of CX0422 would harm Stripe's ability to compete 
+
+by making its proprietary business systems public.  In addition, Stripe seeks to avoid public 
+
+disclosure of its risk assessment methodology and criteria because of its concern that the 
+
+information could be used to fraudulently reverse engineer Stripe's proprietary processes and 
+
+methodologies. 
+
+DWT 25569789vl 0095740-000002 
+
+3 
+
+7. 
+
+Both CX0421  and CX0422 contain business and trade secrets in the form of 
+
+internal Stripe dashboards, which apply Stripe's secret formulas and technical information. 
+
+Stripe uses this information in connection with its underwriting and risk assessments that are 
+
+critical to its ability to offer payments processing services.  The competitive significance of the 
+
+technical .formulas and confidential criteria in CX0421  and CX0422 is unlikely to decrease over 
+
+time and thus, indefinite protection from public disclosure is appropriate. 
+
+I declare under penalty of perjury that the foregoing is true and correct.  Executed 
+
+December 22, 2014 at San Francisco, California. 
+
+DWT 25569789vl  0095740,000002 
+
+4 
+
+PUBLIC-REDACTED 
+
+EXHIBITC 
+
+Hearing Exhibits Nos. CX0421 and CX0422 
+
+MARKED CONFIDENTIAL 
+
+REDACTION IN THEIR ENTIRETY 
+
+REQUESTED 
+
+CERTIFICATE OF SERVICE 
+
+I, Christine Coopey, declare under penalty of perjury under the laws of the State of 
+
+California that the following is true and correct.  On December 30, 2014, I caused to be served 
+the following documents on the parties listed below by the manner indicated: 
+
+•  NON-PARTY STRIPE, INC.'S MOTION FOR IN CAMERA TREATMENT 
+
+(PUBLIC VERSION Al'ID NON-PUBLIC VERSION) 
+
+•  NOTICE OF APPEARANCE 
+• 
+
+[PROPOSEDJORDER 
+
+The Office of the Secretary:  (via hand delivery) 
+Donald S. Clark 
+Office of the Secretary 
+Federal Trade Commission 
+600 Pennsylvania Avenue, N.W., Room H-172 
+Washington, D.C. 20580 
+
+The Office of the Administrative Law Judge (via hand delivery and electronic mail (public 
+version only)) 
+D. Michael Chappell 
+Chief Administrative Law Judge 
+Federal Trade Commission 
+600 Pennsylvania Avenue, N.W., Room H-106 
+Washington, D.C. 20580 
+
+·Federal Trade Commission- Western Region, San Francisco (via overnight delivery and 
+electronic mail (public version only)) 
+Sarah Schroeder 
+Federal Trade Commission 
+901  Market Street, Suite 570 
+San Francisco, CA 94103 
+
+Counsel for John Fanning (via overnight delivery and electronic mail (public version only)) 
+Peter F.  Carr, II 
+Eckert, Seamans, Cherin &  Mellott, LLC 
+Two International Place, 16th Floor 
+Boston, MA 0211 0 
+
+Counsel for Jerk, LLC (via overnight delivery and electronic mail (public version only) 
+David Duncan 
+Zalkind Duncan &  Bernstein LLP 
+65A Atlantic A venue 
+Boston, MA 0211 0 
+
+UNITED STATES OF AMERICA 
+FEDERAL TRADE COMMISSION 
+
+OFFICE OF ADMINISTRATIVE LAW JUDGES 
+
+In the Matter of 
+
+Jerk, LLC, a limited liability company, 
+also d/b/a JERK.. COM, and 
+
+John Fanning, individually and 
+as a member of Jerk, LLC, 
+
+Respondents 
+
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+
+DOCKET NO. 9361 
+
+[PROPOSED) ORDER 
+
+Upon consideration ofNon-Party Stripe, Inc.' s ("Stripe's") Motion for In Camera 
+
+Treatment, it is HEREBY ORDERED that the following documents are to be provided 
+
+permanent in camera treatment from the date of this Order in their entirety. 
+
+.<. 
+
+Exhibit  ~'  Document 
+No. 
+CX0421 
+
+Title/Description 
+Account application 
+dashboard 
+
+.  •. 
+.  ·-.  . 
+. . 
+
+. . 
+
+Date 
+
+2012 
+
+Beginning Bates  Ending Bates 
+No. 
+STRIPEOOOO 10 
+
+No. · 
+STRIPE000017 
+
+.. . 
+
+.. -. 
+
+Cx0422 
+
+Underwriting dashboard 
+
+2012-2014 
+
+STRIPE  000110 
+
+STRIPE  000195 
+
+ORDERED: 
+
+D. Michael Chappell 
+Chief Administrative Law Judge 
+
+Date: 
+
+--~---------------
+
+
