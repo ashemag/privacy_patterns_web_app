@@ -16,6 +16,7 @@ import shutil
 '''
 
 PATH = 'pdfminer-20140328/_pdfs/'
+ROMAN_NUMERALS = ['I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.', 'VIII.', 'IX.', 'X.']
 
 #downloads pdf files from ftc site 
 def download_file(_path, url): 
@@ -62,29 +63,57 @@ def organize_into_case_folder(_path, folder):
 	else: 
 		delete_folder_contents(_path)
 
+def return_info_by_number(key, line): 
+	if key in line.lower(): 
+		return line.split(key)[1].strip()
+	
 def extract_complaint(data, filename, feature_data): 
 	if "COMPLAINT" in data: 
 		print "Complaint doc found: " + filename
 		arr = data.split("\n")
 		for line in arr: 
+			if feature_data == None: #unclear why this needs to be a check 
+				continue 
+			
+			company_type = return_info_by_number("2.", line) 
+			if company_type != None: 
+				feature_data["type"] = company_type 
+			
+			location = return_info_by_number("1.", line) 
+			if location != None: 
+				feature_data["location"] = location  
+
 			if "violations" in line.lower() or "violation" in line.lower(): 
-				if feature_data == None: 
-					feature_data = {} #unclear why case 5 has feature_data = NONETYPE 
+				
 				if 'complaint' in feature_data: 
 					entry = feature_data['complaint']
 					feature_data = entry.append(line)
 				else: 
 					feature_data['complaint'] = [line]
+				
+
+def roman_numerals_found(line): 
+	for elem in ROMAN_NUMERALS: 
+		if elem in line: 
+			return True 
+	return False 
 
 def extract_decisions(data, filename, feature_data): 
 	if "DECISION AND ORDER" in data: 
 		print "Decisions doc found: " + filename 
-		arr = data.split("IT IS")
 		decision_data = []
-		for elem in arr:
-			if "ORDERED" in elem: 
-				decision_data.append(elem.strip())
-		feature_data['decisions'] = '\nDELIM\n'.join(decision_data)
+		arr = data.split('\n\n')
+		for i, line in enumerate(arr): 
+			if roman_numerals_found(line): 
+				decision_data.append(line[i + 1])
+		feature_data['decisions'] = ', '.join(decision_data)
+
+		# arr = data.split("IT IS")
+		# decision_data = []
+		# for elem in arr:
+		# 	if "I." in elem: 
+		# 		decision_data.append(elem.strip())
+		# feature_data['decisions'] = '\nDELIM\n'.join(decision_data)
 
 def extract_features(_path): 
 	arr = os.listdir(_path) 
@@ -106,7 +135,7 @@ def create_sheet(filename = "feature_data.csv"):
 	print "Creating sheet..."
 	with open(filename, 'wb') as csvfile: 
 		writer = csv.writer(csvfile)
-		fieldnames = ['Case URL', 'Complaint', 'Decisions']
+		fieldnames = ['Case URL', 'Complaint', 'Decisions', 'Type', 'Location']
 		writer.writerow(fieldnames)
 		# for entry in data: 
 		# 	writer.writerow([entry['case_url'], ', '.join(entry['complaint']), entry['decisions']])
@@ -122,11 +151,9 @@ def crawl(filename):
 	with open(filename) as csvfile:
 		reader = csv.DictReader(csvfile)
 		for i, row in enumerate(reader):
-			# if i < 5: 
+			# if i < 102: #checks are 102,  
 			# 	continue 
-			# if i >= BOUND: 
-			# 	break 
-
+	
 			print "On case " + str(i + 1)
 			folder = "case_" + str(i + 1) + "/"
 			_path = PATH + folder
@@ -154,16 +181,18 @@ def crawl(filename):
 			
 			feature_data['case_url'] = case_url 
 			print feature_data 
-
+			
 			#append to csv 
 			with open('feature_data.csv', 'ab') as csvfile: 
 				writer = csv.writer(csvfile, lineterminator='\n')
 				print "Writing row..."
-				text = str(feature_data['decisions'])
-				text = text.replace("\n", " ")
-				text = text.replace("\r", " ")
-				text = text.replace(",", " ")
-				writer.writerow([feature_data['case_url'], ', '.join(feature_data['complaint']), text])
+				text = feature_data['decisions'].replace('\n', '')
+				if "type" not in feature_data: 
+					feature_data["type"] = "N/A"
+				if "location" not in feature_data: 
+					feature_data["location"] = "N/A"
+ 				writer.writerow([feature_data['case_url'], ', '.join(feature_data['complaint']), text, feature_data["type"], feature_data["location"]])
+
 
 #driver 
 if __name__ == "__main__":
