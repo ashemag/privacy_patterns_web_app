@@ -47,7 +47,7 @@ if __name__ == "__main__":
 		industry = raw_input('Choose industry category or enter "quit": ')
 	if industry != "quit": 
 		data = get_output(industry, "data_clean.csv")
-		write_to_csv(data, 'results.csv', ['Case Name', 'Case URL', 'Last Updated', 'Tags', 'Jurisdiction', 'Location', 'Description', 'Violation'])
+		write_to_csv(data, 'demo_output/results.csv', ['Case Name', 'Case URL', 'Last Updated', 'Tags', 'Jurisdiction', 'Location', 'Description', 'Violation'])
 
 
 

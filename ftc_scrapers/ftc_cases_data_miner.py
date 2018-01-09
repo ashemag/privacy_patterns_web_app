@@ -8,10 +8,15 @@ from bs4 import BeautifulSoup
 import shutil 
 
 '''
+HELPER SCRIPT FOR AGGREGATING FTC DATA 
+
 1. Downloads all pdfs from cases in data.csv and creates .txt version 
 2. Finds following features in text: 
 	-Complaint types: If COMPLAINT is written in first X characters, extract VIOLATIONS AGAINST Y ACT 
 	-Decision: If DECISION Is written in first X characters, extract it is ordered, it is further ordered 
+	OR identify titles by roman numerals
+
+* Did not work very well because many decisions are not organized with titles. Manual data aggregation necessary 
 	 
 '''
 
