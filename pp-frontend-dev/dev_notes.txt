@@ -1,3 +1,10 @@
-You can see the list of installed packages without the requirements format using “pip list”. Later it will be easier for a different developer (or you, if you need to re-create the environment) to install the same packages using the same versions:
+Install the same packages using the same versions:
+Remember to exclude the virtual environment folder from source control by adding it to the ignore list
 
+# to save 
+$ pip freeze > requirements.txt
+
+# to fetch 
 $ pip install -r requirements.txt
+
+-Django only supports python3 now RIP 
