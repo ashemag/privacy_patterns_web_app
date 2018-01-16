@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="{% url 'home' %}" method="POST"> {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Search</button>
+</form>
+{{context}}
+
+{% endblock %}
