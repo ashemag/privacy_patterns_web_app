@@ -5,7 +5,7 @@
 {% if data %}
 	<table  class="table table-compact table-bordered">
 	    <tr style="font-weight:bold">
-	    	<td > Case Name </td>
+	    	<td> Case Name </td>
 	    	<td> Last Updated</td>
 	    	<td> Specific Violation </td>
 	    	<td> Location </td>
@@ -13,7 +13,9 @@
 
 		{% for entry in data %}
 		    <tr>
-		    	<td>{{ entry.case_name }}</td>
+		    	<td>
+		    		<a href="{{ entry.case_url }}" target="blank"> {{ entry.case_name }} </a>
+		    	</td>
 		    	<td>{{ entry.last_updated}} </td>
 		    	<td>{{ entry.specific_violation}} </td>
 		    	<td>{{ entry.location}} </td>
