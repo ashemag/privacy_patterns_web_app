@@ -1,9 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-<form action="{% url 'home' %}" method="POST"> {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">Search</button>
-</form>
-{{context}}
+<div class="bg home"> 
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded mynav" role="navigation" id="navbar">
+		<div class="container">
+			<a class="navbar-brand mynav" href="{% url 'home' %}">Privacy Patterns</a>
+			<ul class="nav navbar-nav navbar-right">
+			  	<li class="nav-item active">
+					<a class="nav-link" href="{% url 'about_us' %}">About Us<span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron jumbotron_index"> 
+		<h1> Interested in privacy law enforcement? </h1>
+		<h3> Search FTC Cases By Privacy Violations </h3>
+		<a class="btn btn-outline-secondary js-scroll-trigger btn-lg" href="{% url 'data_search'%}">Get Started</a>
+	<div> 
+</div>
 
 {% endblock %}

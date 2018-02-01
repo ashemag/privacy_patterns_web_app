@@ -1,3 +1,69 @@
+/*shift+refresh to remove cache*/
+h3 { 
+	padding-bottom: 20px;
+}
+
 h1 {
-	color: red;
+	font-size: 36px;
+}
+
+body, html {
+	height: 100vh;
+	margin: 0;
+}
+
+.home {
+	background-color: grey;
+}
+
+.datanav {
+	border:0;
+	border-bottom: 1px solid rgba(34,36,38,.15);
+	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+
+img{
+	width:100%;
+  	height:auto;
+}
+
+.card-footer{
+	position:absolute;
+ 	bottom:0;
+	width:100%;
+}
+
+.databody {
+	padding-top:50px;
+	text-align: center;
+}
+
+
+.mynav {
+	background-color: transparent;
+}
+
+.bg {
+	background-image: url("../images/acropolis.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn {
+	border-color: black; 
+	border-radius: 2px;
+	color: black;
+}
+
+.jumbotron_index {
+	float: left;
+	width: 100%;
+	text-align: center;
+	background-color: transparent ;
+}
+
+.data-search-card {
+	width: 50%;
 }

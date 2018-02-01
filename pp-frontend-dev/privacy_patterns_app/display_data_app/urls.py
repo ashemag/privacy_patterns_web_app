@@ -2,6 +2,9 @@ from django.urls import path, reverse_lazy
 from . import views
 
 urlpatterns = [
-    path('',views.CreateMyModelView.as_view(success_url=reverse_lazy('home')), name='home'),
-    path('process/',views.process,name='process'),
+	path('', views.index,name='home'), 
+	path('data-search',views.CreateMyModelView.as_view(success_url="data_vis"), name='data_search'),
+	path('data-search/data',views.DataVisView.as_view(), name='data_vis'),
+	path('about-us',views.AboutUs.as_view(), name='about_us'),
+
 ]

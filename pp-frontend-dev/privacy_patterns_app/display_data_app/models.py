@@ -1,21 +1,16 @@
 from django.db import models
 
-FILTER_CHOICES = (
-    ('Retail','Retail'), #(value, label)
-    ('Entertainment','Entertainment'), 
-    ('Food', 'Food'),
-    ('Mobile Application','Mobile Application'),
-    ('Sports','Sports'),
-    ('Hardware','Hardware'),
-    ('Other','Other'),
-    ('Health','Health'),
-    ('Social Platform','Social Platform'),
-    ('Real estate','Real estate'),
-    ('Automotive','Automotive'),
-    ('Consumer Reporting Agency','Consumer Reporting Agency'),
-    ('Telecommunications','Telecommunications'),
-    ('Financial Services','Financial Services'),
-)
+class DataEntry(models.Model): 
+    case_name = models.TextField(default='')
+    case_url = models.TextField(default='')
+    last_updated = models.TextField(default='')
+    tags = models.TextField(default='')
+    jurisdiction = models.TextField(default='')
+    specific_violation = models.TextField(default='')
+    company_type = models.TextField(default='')
+    company_type_key = models.TextField(default='')
+    location = models.TextField(default='')
 
-class FilterModel(models.Model):
-  	filter_options = models.CharField(max_length=100, choices=FILTER_CHOICES, default='Retail')
+    # Case Name,Case URL,Case Number,Last Updated,Tags,Jurisdiction,
+    # Enforcement Authority,Case URL,
+    # Specific Violation,Company Type,Company Type Key,Location

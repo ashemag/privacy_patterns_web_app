@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div> 
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded mynav datanav" role="navigation" id="navbar">
+		<div class="container">
+			<a class="navbar-brand mynav" href="{% url 'home' %}">Privacy Patterns</a>
+			
+			<ul class="nav navbar-nav  ml-auto">
+			  	<li class="nav-item active">
+					<a class="nav-link" href="{% url 'data_search' %}">Search<span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav ">
+			  	<li class="nav-item active">
+					<a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+			
+		</div>
+	</nav>
+	<div class="container databody"> 
+		{% block info %}
+		{% endblock %}
+	<div> 
+</div>
+{% endblock %}
