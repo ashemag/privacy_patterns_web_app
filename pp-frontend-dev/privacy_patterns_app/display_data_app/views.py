@@ -28,9 +28,9 @@ def process_principles_for_entry(principle_ids, data):
 			pos_recs.append(pos_rec)
 			data_types.append(data_type)
 	return notes, subprinciples, pos_recs, data_types 
-			
+
+#extract data from csvs and populate database 
 def populate_database(): 
-	#get data from privacy_principles doc 
 	filename = 'display_data_app/privacy_principles.csv'
 	data = {}
 	gap_principle_mapping = {}
@@ -82,10 +82,12 @@ def populate_database():
 	print("completed data adding")
 	exit() 
 
+#homepage 
 def index(request): 
 	#populate_database()
 	return render(request, 'index.html')
 
+#helper for DataVisView
 def is_valid(data_entry, data_types, locations, industries): 
 	if data_entry.location in locations and data_entry.company_type_key in industries: 
 		data_entry_data_types = ast.literal_eval(data_entry.data_type)
@@ -123,9 +125,7 @@ class DataVisView(TemplateView):
 		for data_entry in DataEntry.objects.all(): 
 			if is_valid(data_entry, data_type_list, locations_list, industries_list): 
 				data.add(data_entry.id)
-
 	
-		#return super(TemplateView, self).render_to_response(context)
 		return DataEntry.objects.filter(id__in = list(data)) 
 
 class form1(FormView): 
@@ -192,9 +192,6 @@ def faq(request):
 
 def glossary(request): 
 	return render(request, 'glossary.html')
-
-def bubble_plot(request): 
-	return render(request, 'bubble_plot.html')
 
 def data_search_info(request): 
 	return render(request, 'data_search_info.html')

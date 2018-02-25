@@ -13,9 +13,6 @@ urlpatterns = [
 
 	path('data-search/data-vis',views.DataVisView.as_view(), name='data_vis'),
 
-	path('findings', views.bubble_plot, name='findings'),
-
 	path('faq',views.faq, name='faq'),
 	path('glossary',views.glossary, name='glossary'),
-
 ]

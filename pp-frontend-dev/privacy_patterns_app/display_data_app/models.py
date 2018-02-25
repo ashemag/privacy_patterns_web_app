@@ -1,5 +1,6 @@
 from django.db import models
 
+#tracks ftc case data and links to privacy principles
 class DataEntry(models.Model): 
     case_name = models.TextField(default='')
     case_url = models.TextField(default='')
@@ -16,7 +17,8 @@ class DataEntry(models.Model):
     note = models.TextField(default='')
     pos_rec = models.TextField(default='')
     data_type = models.TextField(default='')
-    
+  
+#tracks user preferences   
 class UserModel(models.Model): 
     data_type = models.TextField(default='')
     location = models.TextField(default='')

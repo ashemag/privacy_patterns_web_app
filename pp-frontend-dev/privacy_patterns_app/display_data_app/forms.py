@@ -86,7 +86,6 @@ INDUSTRIES_2 = (
 	("Other", "Other"), 
 )
 
-
 class DataTypeForm(forms.Form):
 	field1 = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=DATA_TYPES_1)
 	field2 = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=DATA_TYPES_2)
