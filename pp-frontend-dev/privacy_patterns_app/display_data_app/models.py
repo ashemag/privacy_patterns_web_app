@@ -11,6 +11,13 @@ class DataEntry(models.Model):
     company_type_key = models.TextField(default='')
     location = models.TextField(default='')
 
-    # Case Name,Case URL,Case Number,Last Updated,Tags,Jurisdiction,
-    # Enforcement Authority,Case URL,
-    # Specific Violation,Company Type,Company Type Key,Location
+    #privacy 
+    subprinciple = models.TextField(default='')
+    note = models.TextField(default='')
+    pos_rec = models.TextField(default='')
+    data_type = models.TextField(default='')
+    
+class UserModel(models.Model): 
+    data_type = models.TextField(default='')
+    location = models.TextField(default='')
+    industries = models.TextField(default='')

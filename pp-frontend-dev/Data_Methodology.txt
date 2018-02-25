@@ -1,0 +1,11 @@
+(1) Download Privacy Principles Master doc as csv from here: https://docs.google.com/spreadsheets/d/13_5uGutL6Tr9ijoxQs_6mmmgZ-Ush-9bqdYSgc64vhM/edit#gid=1756457520
+
+(2) Rename privacy_principles.csv and place in this folder
+
+(3) Download FTC cases as csv from here: https://docs.google.com/spreadsheets/d/1Uzu0MZ8JWQSKDZjfcJITvAU6vp7iJusg9UvYcsOWBog/edit#gid=818129433
+
+(4) Rename ftc_cases.csv and place in this folder
+
+(5) If data has changed, comment in populate databases and run site locally 
+
+(6) Comment out populate changes and rerun site. Should be updated.

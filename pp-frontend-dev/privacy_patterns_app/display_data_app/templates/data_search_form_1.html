@@ -1,0 +1,29 @@
+{% extends "data_search_base.html" %}
+{% block info %}
+
+<div class="card-container"> 
+
+<div class="card data-search-card mx-auto"> 
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+	<div class="card-block">
+		<h4 class="card-title">What Are you Doing with Your Data?</h4>
+		<form action="" method="POST"> {% csrf_token %}
+			<div class="row"> 
+				<div class="card col-sm" style="border:none !important;"> 
+					{% for checkbox in form.field1%}
+						{{ checkbox }}
+					{% endfor %}
+				</div>
+				<div class="card col-sm" style="border:none !important;"> 
+					{% for checkbox in form.field2%}
+						{{ checkbox }}
+					{% endfor %}
+				</div>
+			</div>
+			<button class="btn btn-outline-secondary js-scroll-trigger btn-lg" type="submit">Submit</button>
+		</form>
+	</div>
+</div>
+{% endblock %}

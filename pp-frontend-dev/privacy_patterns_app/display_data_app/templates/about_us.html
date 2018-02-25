@@ -1,37 +1,57 @@
 {% extends "data_search_base.html" %}
 {% block info %}
+{% load staticfiles %}
 
 <!-- Introduction Row -->
-<h1 class="my-4">About Us</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+<h3 class="my-4">Get in touch with us!</h3>
 
 <!-- Team Members Row -->
 <div class="container"> 
 	<div class="row">
-		<div class="col-lg-12">
+		<!-- <div class="col-lg-12">
 		  <h2 class="my-4">Our Team</h2>
+		</div> -->
+		<div class="col-lg-4 col-sm-6 text-center mb-4">
+		  <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/tracy.jpg' %}" alt="">
+		  <h3>Tracy Kosa
+		    <small>Team Lead</small>
+		  </h3>
+		  <p>tkosa@stanford.edu</p>
 		</div>
 		<div class="col-lg-4 col-sm-6 text-center mb-4">
-		  <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-		  <h3>John Smith
-		    <small>Job Title</small>
+		  <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/ashe.jpg' %}" alt="">
+		  <h3>Ashe Magalhaes
+		    <small>Software Engineer</small>
 		  </h3>
-		  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+		  <p>ashemag@stanford.edu</p>
 		</div>
 		<div class="col-lg-4 col-sm-6 text-center mb-4">
-		  <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-		  <h3>John Smith
-		    <small>Job Title</small>
+		  <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/willie.jpg' %}" alt="">
+		  <h3>Willie Costello
+		    <small>Philosophical Consultant</small>
 		  </h3>
-		  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+		  <p>williec@stanford.edu</p>
 		</div>
-		<div class="col-lg-4 col-sm-6 text-center mb-4">
-		  <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-		  <h3>John Smith
-		    <small>Job Title</small>
+	</div>
+	<div class="row">
+		 <div class="col-lg-2">
+	 	 </div>
+		<div class="col-lg-3 text-center">
+		  <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/yixin.jpg' %}" alt="">
+		  <h3>Yixin 
+		    <small>Legal Consultant</small>
 		  </h3>
-		  <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+		  <p>yishg@stanford.edu</p>
 		</div>
+		<div class="col-lg-5 text-center">
+		  <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/luis.jpg' %}" alt="">
+		  <h3>Luis Bergolla
+		    <small>Legal Consultant</small>
+		  </h3>
+		  <p>bergolla@stanford.edu</p>
+		</div>
+		<div class="col-lg-2">
+  		</div>
 	</div>
 </div>
 

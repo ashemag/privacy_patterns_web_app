@@ -1,27 +1,31 @@
 {% extends "data_search_base.html" %}
 {% block info %}
+<h3> FTC Case Data From Filters</h3>
+<p> Filters include {{ view.data_types}}, {{view.locations}}, {{view.industries}} </p>
 
-<h3> Filter: {{ title }} </h3>
-{% if data %}
+{% if view.data %}
 	<table  class="table table-compact table-bordered">
 	    <tr style="font-weight:bold">
 	    	<td> Case Name </td>
-	    	<td> Last Updated</td>
-	    	<td> Specific Violation </td>
+	    	<td> Positive Recommendation </td>
+	    	<td> Industry</td>
 	    	<td> Location </td>
 	    </tr>
 
-		{% for entry in data %}
+		{% for entry in view.data %}
 		    <tr>
 		    	<td>
 		    		<a href="{{ entry.case_url }}" target="blank"> {{ entry.case_name }} </a>
 		    	</td>
-		    	<td>{{ entry.last_updated}} </td>
-		    	<td>{{ entry.specific_violation}} </td>
+		    	<td>{{ entry.pos_rec}} </td>
+		    	<td>{{ entry.company_type_key}} </td>
 		    	<td>{{ entry.location}} </td>
+
 		    </tr> 
 		{% endfor %}
 	</table>
+{% else %}
+	<h3> No data available for these filters </h3>
 {% endif %}
 {% endblock %}
 

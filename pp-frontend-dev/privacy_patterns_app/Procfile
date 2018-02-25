@@ -1,1 +1,1 @@
-web: gunicorn privacy-patterns.wsgi
+web: gunicorn privacy_patterns_app.wsgi
