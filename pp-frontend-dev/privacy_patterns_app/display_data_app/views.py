@@ -51,12 +51,14 @@ def populate_database():
 		for i, row in enumerate(reader): 
 			principle_id, case_name = row['Privacy Principle - Primary'], row['Case Name']
 			case_url, company_type_key, location, last_updated = row['Case URL'], row['Company Type Key'], row['Location'], row['Last Updated']
+			tags, specific_violation = row['Tags'], row['Specific Violation ']
+
 			principle_ids = [x.strip() for x in principle_id.split(';')]
 			if principle_ids == ['']: 
 				continue 
 			if 'N/A' in principle_ids[0]: 
 				continue 
-			
+	
 			notes, subprinciples, pos_recs, data_types = process_principles_for_entry(principle_ids, data)
 
 			data_type_temp = set() 
@@ -67,8 +69,8 @@ def populate_database():
 						data_type_temp.add(data_type)
 				else: 
 					data_type_temp.add(data_type)
-
-			data_entry = [case_name, case_url, last_updated, location, company_type_key, ('\n\n').join(subprinciples), ('\n\n').join(notes), ('\n\n').join(pos_recs), list(data_type_temp)]
+			print(principle_ids)
+			data_entry = [case_name, case_url, last_updated, location, company_type_key, principle_ids, ('\n\n').join(notes), ('\n\n').join(pos_recs), list(data_type_temp), tags, specific_violation]
 			processed_data.append(data_entry)
 	
 	ctr_dict = collections.Counter(ctr) #becomes principles_id_to_counts
@@ -76,15 +78,15 @@ def populate_database():
 
 	#add data to model 
 	for i, entry in enumerate(processed_data): 
-		new_entry = DataEntry(case_name = entry[0], case_url = entry[1], last_updated=entry[2], location=entry[3], company_type_key=entry[4], subprinciple=entry[5], note=entry[6], pos_rec = entry[7], data_type=entry[8])
+		new_entry = DataEntry(case_name = entry[0], case_url = entry[1], last_updated=entry[2], location=entry[3], company_type_key=entry[4], subprinciples=entry[5], notes=entry[6], positive_recommendations = entry[7], data_usage=entry[8], tags=entry[9], specific_violation=entry[10])
 		new_entry.id = i + 1 
 		new_entry.save() 
-	print("completed data adding")
+	print("=== Completed Data Transfer to Database ===")
 	exit() 
 
 #homepage 
 def index(request): 
-	#populate_database()
+	populate_database()
 	return render(request, 'index.html')
 
 #helper for DataVisView
@@ -114,8 +116,6 @@ class DataVisView(TemplateView):
 		return ast.literal_eval(user.industries)
 
 	def data(self): 
-		print(DataEntry.objects.all())
-		print("in data vis POST view")
 		user = UserModel.objects.get(id=1)	
 		data_type_list = ast.literal_eval(user.data_type)
 		locations_list = ast.literal_eval(user.location)
@@ -133,20 +133,13 @@ class form1(FormView):
 	template_name = 'data_search_form_1.html'
 	success_url = 'form2'
 
-	print("in form1 view")
 	def form_valid(self, form):
-		print("in form_valid")
 		#create user 
 		UserModel.objects.all().delete() 
 		action_list = self.request.POST.getlist('field1') + self.request.POST.getlist('field2')
-		print(action_list) 
-		new_user = UserModel(data_type=action_list)
+		new_user = UserModel(data_usage=action_list)
 		new_user.id = 1 
 		new_user.save() 
-		return super(form1, self).form_valid(form)
-	
-	def form_invalid(self, form): 
-		print("in form invalid")
 		return super(form1, self).form_valid(form)
 
 class form2(FormView): 
@@ -156,16 +149,11 @@ class form2(FormView):
 
 	def form_valid(self, form):
 		locations_list = self.request.POST.getlist('field1') + self.request.POST.getlist('field2') + self.request.POST.getlist('field3') + self.request.POST.getlist('field4')
-		print(locations_list) 
 
 		#select user 
 		user = UserModel.objects.get(id=1)		
 		user.location = locations_list
 		user.save() 
-		return super(form2, self).form_valid(form)
-	
-	def form_invalid(self, form): 
-		print("in form invalid")
 		return super(form2, self).form_valid(form)
 
 class form3(FormView): 
@@ -181,10 +169,6 @@ class form3(FormView):
 		user = UserModel.objects.get(id=1)		
 		user.industries = industries_list
 		user.save() 
-		return super(form3, self).form_valid(form)
-	
-	def form_invalid(self, form): 
-		print("in form invalid")
 		return super(form3, self).form_valid(form)
 
 def faq(request): 

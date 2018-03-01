@@ -19,5 +19,6 @@ from django.contrib.auth import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('', include('display_data_app.urls')),
 ]

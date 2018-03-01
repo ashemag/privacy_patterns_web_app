@@ -45,6 +45,7 @@ ALLOWED_HOSTS = ['privacy-patterns.herokuapp.com', '.herokuapp.com', '127.0.0.1'
 # Application definition
 
 INSTALLED_APPS = [
+    # 'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'display_data_app', 
+    'multiselectfield',    
 ]
 
 MIDDLEWARE = [
@@ -79,10 +81,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'privacy_patterns_app.wsgi.application'
 
