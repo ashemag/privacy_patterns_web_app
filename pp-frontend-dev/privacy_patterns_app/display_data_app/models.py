@@ -1,5 +1,7 @@
 from django.db import models
 from multiselectfield import MultiSelectField
+from django import forms
+
 # from easy_select2 import select2_modelform
 
 SUBPRINCIPLE_CHOICES = (
@@ -13,6 +15,13 @@ SUBPRINCIPLE_CHOICES = (
     ("1.2.4",  "1.2.4, Risk Assessment"), 
     ("1.2.5", "1.2.5, Consistency of Commitments With Privacy Policies and Procedures"), 
     ("1.2.6", "1.2.6, Infrastructure and Systems Management"), 
+)
+
+DATA_USAGE = (
+    ("Collection", "Collection"),
+    ("Access" , "Access"), 
+    ("Use" , "Use"),
+    ("Disclosure" , "Disclosure"),
 )
 
 # 1.2.7   Privacy Incident and Breach Management
@@ -90,23 +99,32 @@ SUBPRINCIPLE_CHOICES = (
 # 10.2.5  Ongoing Monitoring
 
 #tracks ftc case data and links to privacy principles
+
+class Recommendation(models.Model): 
+    text = models.TextField(default='', null=True, blank=True)
+    principle_id = models.TextField(default='', null=True, blank=True)
+    priority_number = models.IntegerField(default=0)
+    note = models.TextField(default='')
+    subprinciple = models.TextField(default='')
+    ref = models.TextField(default='')
+    def __str__(self): 
+        return self.ref + '-' + self.subprinciple
+
 class DataEntry(models.Model): 
     case_name = models.TextField(default='')
     case_url = models.TextField(default='')
     last_updated = models.TextField(default='')
     tags = models.TextField(default='')
     specific_violation = models.TextField(default='')
-    # company_type = models.TextField(default='')
     company_type_key = models.TextField(default='')
     location = models.TextField(default='')
 
     #privacy 
-    # subprinciple = select2_modelform(SUBPRINCIPLE_CHOICES)
-    subprinciples = MultiSelectField(max_length=100,choices=SUBPRINCIPLE_CHOICES, null=True, blank=True,help_text="<div style='float:right;font-size:12px;color:red'> HELP TEXT DISPLAYED HERE</div>")
-    notes = models.TextField(default='')
-    positive_recommendations = models.TextField(default='')
-    data_usage = models.TextField(default='')
+    subprinciples = models.TextField(default='')  
+    positive_recommendations = models.ManyToManyField(Recommendation, blank=True, symmetrical=False)
 
+    # data_usage = models.TextField(default='')
+    data_usage = MultiSelectField(max_length=100,choices=DATA_USAGE, null=True, blank=True,help_text="<div style='float:right;font-size:12px;color:red'> HELP TEXT DISPLAYED HERE</div>")
     # jurisdiction = models.TextField(default='')
 
 #tracks user preferences   
@@ -114,3 +132,4 @@ class UserModel(models.Model):
     data_usage = models.TextField(default='')
     location = models.TextField(default='')
     industries = models.TextField(default='')
+

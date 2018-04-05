@@ -115,10 +115,3 @@ class IndustryForm(forms.Form):
 		super(IndustryForm, self).__init__(*args, **kwargs)
 		for field in self.fields:
 			self.fields[field].required = False
-
-# class DataEntryForm(forms.ModelForm):
-#     class Meta:
-#         model = DataEntry
-#         fields = ('__all__')
-        
-
