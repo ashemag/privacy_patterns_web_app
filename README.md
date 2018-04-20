@@ -1,4 +1,4 @@
-# privacy_patterns
+# Web App 
 
-privacy_patterns_app: app for heroku deployment 
-disply_data_app: core functionality 
+Full-stack Django App for user interaction with Privacy Patterns Database 
+To do: Refactor from Dan's sketches
