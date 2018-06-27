@@ -107,8 +107,9 @@ class Recommendation(models.Model):
     note = models.TextField(default='')
     subprinciple = models.TextField(default='')
     ref = models.TextField(default='')
+    url = models.TextField(default='')
     def __str__(self): 
-        return self.ref + '-' + self.subprinciple
+        return self.ref + " (" + self.principle_id + ")" + ' - ' + self.subprinciple
 
 class DataEntry(models.Model): 
     case_name = models.TextField(default='')

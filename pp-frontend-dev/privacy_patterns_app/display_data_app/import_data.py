@@ -8,13 +8,13 @@ import ast
 Class to import data from csv format to 
 Django Database 
 '''
-
 class Importer: 
 	def __init__(self, privacy_principles_csv = 'display_data_app/privacy_principles.csv', cases_csv = 'display_data_app/ftc_cases.csv'): 
 		self.principle_id_to_counts = collections.Counter({'1.2.2': 43, '2.1.1': 21, '3.2.3': 20, '3.1.1': 20, '8.2.2': 18, '2.2.3': 18, '3.2.1': 16, '4.2.2': 16, '4.1.1': 14, '2.2.2': 14, '10.2.5': 13, '4.2.3': 13, '2.2.1': 13, '2.1.0': 13, '8.2.1': 12, '8.2.7': 11, '4.2.4': 10, '4.1.2': 10, '1.2.4': 9, '10.2.4': 9, '7.2.1': 9, '8.2.5': 9, '6.1.1': 8, '1.2.7': 8, '1.2.6': 8, '3.2.4': 8, '5.2.1': 7, '4.2.1': 7, '5.1.1': 6, '4.1.0': 6, '6.2.5': 5, '1.2.10': 5, '3.1.2': 5, '7.1.2': 5, '7.1.1': 5, '5.2.3': 5, '7.2.2': 5, '7.2.3': 4, '1.2.11': 4, '10.2.3': 4, '3.1.0': 4, '5.1.0': 4, '3.22.4': 3, '10.2.2': 3, '9.2.1': 3, '7.2.4': 3, '10.2.1': 3, '8.1.1': 3, '7.1.0': 2, '1.2.1': 2, '6.2.1': 2, '8': 2, '1.1.0': 2, '6.2.2': 2, '3.2.2': 2, '6.1.0': 2, '8.2.6': 2, '1.2.5': 2, '6.2.3': 2, '5.2.2': 1, '': 1, '7': 1, '8.2.3': 1, '3.2.3ñ 7.1..1': 1, '10.1.1': 1, '9.1.0': 1, '9.1.1': 1, '6.2.6': 1, '3.3.2': 1})
 		self.filename1 = privacy_principles_csv
 		self.filename2 = cases_csv 
 		print(self.filename2)
+
 	#populates recommendations database 
 	#maps principle_id to recommendation object id 
 	def _recommendations_list(self, filename): 
@@ -27,7 +27,8 @@ class Importer:
 				ref = row['GAPP Ref']
 				principle_mapping[principle_id] = i 
 				priority_number = self.principle_id_to_counts[principle_id]
-				rec = Recommendation(id=i, priority_number=priority_number, text = pos_rec, principle_id = principle_id, note=note, subprinciple=subprinciple, ref=ref)
+				pos_rec, url = self.process_pos_recs(pos_rec)
+				rec = Recommendation(id=i, priority_number=priority_number, text = pos_rec, principle_id = principle_id, note=note, subprinciple=subprinciple, ref=ref, url=url)
 				rec.save() 
 		return principle_mapping 
 	
@@ -43,9 +44,37 @@ class Importer:
 			else: 
 				data_types.add(data_type)
 		return data_types
+	
+	def process_pos_recs(self, rec):
+		url = ''
+		# print(rec) 
+		# exit() 
+		cp = rec 
+		skip = -2
+		if "<" in rec: 
+			rec = rec.replace("<", "")
+			rec = rec.replace(">", "")
+			arr = rec.split(' ')
+			for i, text in enumerate(arr): 
+				if i == skip or i == skip + 1: 
+					continue 
+				if "http" in text: 
+					if i != 0: 
+						key = arr[i -1]
+					markup = "<a href='" + text + "'>" + key + "</a>"
+					del arr[i]
+					del arr[i - 1]
+					arr.insert(i - 1, markup)
+				if "NOTE" in text: 
+					text = '<br/>' + text 
+					arr[i] = text 
+				
+			rec = (' ').join(arr)
+		return rec, url 
 
 	#extract data from csvs and populate database 
 	def populate_database(self, REPLACE=True): 
+		print("In populate database")
 		if REPLACE: 
 			Recommendation.objects.all().delete() 
 		principle_mapping = self._recommendations_list(self.filename1)
@@ -77,6 +106,7 @@ class Importer:
 				
 				data_types = self._process_data_types(principle_ids, data)
 				pos_recs = [principle_mapping[i] for i in principle_ids if i in principle_mapping] 
+
 				subprinciples = [i for i in principle_ids]
 
 				data_entry = [case_name, case_url, last_updated, location, company_type_key, list(data_types), tags, specific_violation, subprinciples, pos_recs]

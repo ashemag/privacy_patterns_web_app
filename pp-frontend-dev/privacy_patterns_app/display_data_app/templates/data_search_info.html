@@ -1,34 +1,20 @@
-{% extends "data_search_base.html" %}
-{% block info %}
-
-<div class="card-container"> 
-
-<div class="card data-search-card mx-auto"> 
-	<div class="progress">
-	  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-	</div>
- 	<div class="card-block">
-	    <h4 class="card-title">Disclaimer</h4>
-	    <p align="justify" class="card-text">
-
-The Digital Civil Society Lab (DCSL) maintains this site for the sole purpose of providing general education and guidance to non-profit organizations regarding the laws of privacy and data protection in different domestic and international jurisdictions. DCSL is not a law firm and does not provide legal advice. The information obtained through this site is no substitute for legal advice from a licensed attorney in your state or country.  DCSL recommends consulting with an attorney in your jurisdiction if your organization encounters any specific legal issues.</p>
-
-<p align="justify" class="card-text">
-
-By using this site you acknowledge that there is no attorney-client relationship arising between you and DCSL, PACS, or Stanford University. DCLS will not collect its users’ personal information without obtaining prior informed consent.  
-</p>
-<p align="justify" class="card-text">
-
-The Digital Civil Society Lab (DCSL) at Stanford’s Center on Philanthropy and Civil Society (PACS) is a program of the Institute for Research in the Social Sciences under the School of Humanities and Sciences.  
-
-		</p>
-
-		<a class="btn btn-outline-secondary js-scroll-trigger btn-lg" href="{% url 'form1'%}">I understand</a>
-
-	   <!--  <form action="{% url 'data_vis' %}" method="POST"> {% csrf_token %}
-		    {{ form.as_p }}
-		    <button type="submit" class="save btn btn-default">Search</button>
-		</form> -->
-  	</div>
-</div>
-{% endblock %}
+{% extends "data_search_base.html" %} {% block info %}
+<div class="card-container">
+    <div class="card data-search-card mx-auto">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="card-block">
+            <h4 class="card-title">Disclaimer</h4>
+            <p align="justify" class="card-text">
+                The Digital Civil Society Lab (DCSL) maintains this site for the sole purpose of providing general education and guidance to non-profit organizations regarding the laws of privacy and data protection in different domestic and international jurisdictions. DCSL is not a law firm and does not provide legal advice. The information obtained through this site is no substitute for legal advice from a licensed attorney in your state or country. DCSL recommends consulting with an attorney in your jurisdiction if your organization encounters any specific legal issues.</p>
+            <p align="justify" class="card-text">
+                By using this site you acknowledge that there is no attorney-client relationship arising between you and DCSL, PACS, or Stanford University. DCLS will not collect its users’ personal information without obtaining prior informed consent.
+            </p>
+            <p align="justify" class="card-text">
+                The Digital Civil Society Lab (DCSL) at Stanford’s Center on Philanthropy and Civil Society (PACS) is a program of the Institute for Research in the Social Sciences under the School of Humanities and Sciences.
+            </p>
+            <a class="btn btn-outline-secondary js-scroll-trigger btn-lg" href="{% url 'jurisdiction'%}">I understand</a>
+        </div>
+    </div>
+    {% endblock %}

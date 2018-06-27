@@ -6,20 +6,20 @@ from display_data_app.forms import DataTypeForm, LocationForm, IndustryForm
 from display_data_app.models import DataEntry, UserModel, Recommendation
 from display_data_app.import_data import Importer 
 from display_data_app.export_data import Exporter 
+import ast 
 
 #homepage 
 def index(request): 
-	# Importer(cases_csv='display_data_app/ftc_cases_to_add.csv').populate_database(REPLACE=False)
-	Exporter().export() 
-	exit() 
-
-	#populate_database()
+	# Importer().populate_database(REPLACE=True)
+	#Exporter().export()
+	#exit() 
 	return render(request, 'index.html')
 
 #helper for DataVisView
 def is_valid(data_entry, data_types, locations, industries): 
 	if data_entry.location in locations and data_entry.company_type_key in industries: 
-		data_entry_data_types = ast.literal_eval(data_entry.data_type)
+		# data_entry_data_types = ast.literal_eval(data_entry.data_usage)
+		data_entry_data_types = data_entry.data_usage
 		for data_type in data_entry_data_types: 
 			if data_type in data_types: 
 				return True # return if they share at least one data type 
@@ -31,20 +31,23 @@ class DataVisView(TemplateView):
 	template_name = "data_vis.html"
 
 	def data_types(self): 
-		user = UserModel.objects.get(id=1)  
-		return ast.literal_eval(user.data_type)
+		user = UserModel.objects.get(id=1) 
+		arr = ast.literal_eval(user.data_usage)
+		return ', '.join(arr)
 
 	def locations(self): 
 		user = UserModel.objects.get(id=1)  
-		return ast.literal_eval(user.location)
+		arr = ast.literal_eval(user.location)
+		return ', '.join(arr)
 
 	def industries(self): 
 		user = UserModel.objects.get(id=1)  
-		return ast.literal_eval(user.industries)
+		arr = ast.literal_eval(user.industries)
+		return ', '.join(arr)
 
 	def data(self): 
 		user = UserModel.objects.get(id=1)  
-		data_type_list = ast.literal_eval(user.data_type)
+		data_type_list = ast.literal_eval(user.data_usage)
 		locations_list = ast.literal_eval(user.location)
 		industries_list = ast.literal_eval(user.industries)
 
@@ -58,7 +61,7 @@ class DataVisView(TemplateView):
 class form1(FormView): 
 	form_class = DataTypeForm 
 	template_name = 'data_search_form_1.html'
-	success_url = 'form2'
+	success_url = 'ftc-form2'
 
 	def form_valid(self, form):
 		#create user 
@@ -72,7 +75,7 @@ class form1(FormView):
 class form2(FormView): 
 	form_class = LocationForm
 	template_name = 'data_search_form_2.html'
-	success_url = 'form3'
+	success_url = 'ftc-form3'
 
 	def form_valid(self, form):
 		locations_list = self.request.POST.getlist('field1') + self.request.POST.getlist('field2') + self.request.POST.getlist('field3') + self.request.POST.getlist('field4')
@@ -86,11 +89,10 @@ class form2(FormView):
 class form3(FormView): 
 	form_class = IndustryForm
 	template_name = 'data_search_form_3.html'
-	success_url = 'data-vis'
+	success_url = 'ftc-data'
 
 	def form_valid(self, form):
 		industries_list = self.request.POST.getlist('field1') + self.request.POST.getlist('field2') 
-		print(industries_list) 
 
 		#select user 
 		user = UserModel.objects.get(id=1)      
@@ -106,6 +108,9 @@ def glossary(request):
 
 def data_search_info(request): 
 	return render(request, 'data_search_info.html')
+
+def choose_jurisdiction(request): 
+	return render(request, 'choose_jurisdiction.html')
 
 class AboutUs(TemplateView): 
 	template_name = 'about_us.html'

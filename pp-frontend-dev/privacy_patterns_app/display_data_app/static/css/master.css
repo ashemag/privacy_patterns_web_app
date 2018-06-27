@@ -1,157 +1,174 @@
 /*shift+refresh to remove cache*/
-h3 { 
-	padding-bottom: 20px;
+
+.rec-style {
+    border-style: solid;
+    border-width: 5px;
+}
+
+h3 {
+    padding-bottom: 20px;
 }
 
 h1 {
-	font-size: 36px;
+    font-size: 36px;
 }
 
 table {
     table-layout: fixed;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-th,td, tr {
-	max-width: 50px !important; 
+th,
+td,
+tr {
+    max-width: 50px !important;
     word-wrap: break-word;
-	white-space:pre-line;
+    /*	white-space:p
+re-line;
+*/
 }
 
 .container {
-	overflow: auto;
+    overflow: auto;
 }
 
 body {
-	 height:100vh !important;
-	 margin:0px;
-	 padding:0px;
+    height: 100vh !important;
+    margin: 0px;
+    padding: 0px;
 }
 
 .checkbox {
-	column-count:2; 
-	column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
 }
 
 .datanav {
-	border:0;
-	border-bottom: 1px solid rgba(34,36,38,.15);
-	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    border: 0;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
 }
 
 .progress-bar {
-	background-color:#8c1515 !important;
+    background-color: #8c1515 !important;
 }
 
-.card-footer{
-	position:absolute;
- 	bottom:0;
-	width:100%;
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .databody {
-	padding-top:50px;
-	padding-bottom:50px;
-	text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 
 .mynav {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 .bg {
-	background-image: url("../images/acropolis.jpg");
-	height: 100vh;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: 1;
+    background-image: url("../images/acropolis.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
+
 .arrow {
-	background-image: url("../images/arrow.png");
-	height:100px;
-	width:100px;
-	z-index: -1;
-	position:  absolute;
+    background-image: url("../images/arrow.png");
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    position: absolute;
 }
 
 .btn {
-	border-color: black; 
-	border-radius: 2px;
-	color: black;
+    border-color: black;
+    border-radius: 2px;
+    color: black;
 }
 
 .jumbotron_index {
-	float: left;
-	width: 100%;
-	text-align: center;
-	background-color: transparent;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
 }
 
 .home {
-	height:100vh;
+    height: 100vh;
 }
 
-.footer{
-	clear:both;
-	width:100%;
-	bottom:0px;
-	position: relative; 
-    text-align: center !important; 
+.footer {
+    clear: both;
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+    text-align: center !important;
+    padding: 10px;
 }
 
-.btn:hover{
-	background-color: #8c1515;
+.btn:hover {
+    background-color: #8c1515;
 }
 
 .arrow {
-	position:relative;
-	text-align: center;
-	padding: 0;
-  	z-index:20;
-  	margin-left:auto;
-  	margin-right:auto;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    z-index: 20;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
-  display: inline-block;
-  border-radius: 50%;
+    display: inline-block;
+    border-radius: 50%;
 }
 
-a:hover .left, a:hover .top, a:hover .bottom, a:hover .right{
-  border: 0.5em solid #8c1515;
+a:hover .left,
+a:hover .top,
+a:hover .bottom,
+a:hover .right {
+    border: 0.5em solid #8c1515;
 }
 
-a:hover .left:after, a:hover .top:after, a:hover .bottom:after, a:hover .right:after {
-  border-top: 0.5em solid #8c1515;
-  border-right: 0.5em solid #8c1515;
+a:hover .left:after,
+a:hover .top:after,
+a:hover .bottom:after,
+a:hover .right:after {
+    border-top: 0.5em solid #8c1515;
+    border-right: 0.5em solid #8c1515;
 }
 
 .bottom {
-  display: inline-block;
-  width: 4em;
-  height: 4em;
-  border: 0.5em solid #000;
-  border-radius: 50%;
-  margin-left: 0.75em;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.5em solid #000;
+    border-radius: 50%;
+    margin-left: 0.75em;
 }
 
 .bottom:after {
-  content: '';
-	display: inline-block;
-  margin-top: 0.6em;
-  width: 1.4em;
-  height: 1.4em;
-  border-top: 0.5em solid #000;
-  border-right: 0.5em solid #000;
-  -moz-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+    content: '';
+    display: inline-block;
+    margin-top: 0.6em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid #000;
+    border-right: 0.5em solid #000;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
-
-
