@@ -1,0 +1,23 @@
+{% extends "data_search_base.html" %} {% block info %}
+<h3> OPC Case Data From Filters</h3>
+<p> Filters include: </p>
+<p> {{ view.sectors }}</p>
+<p> {{ view.topics }}</p>
+<p> {{ view.complaint_types }} </p>
+<p> {{ view.dispositions }} </p>
+{% if view.data %}
+<table class="table table-compact table-bordered">
+    <tr style="font-weight:bold">
+        <td> Case Name </td>
+        <td> Privacy Recommendations </td>
+    </tr>
+    {% for entry in view.data %}
+    <tr>
+        <td>
+            <a href="{{ entry.case_url }}" target="blank"> {{ entry.case_name }} </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<h3> No data available for these filters </h3> {% endif %} {% endblock %}

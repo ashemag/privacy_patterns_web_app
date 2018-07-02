@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import DataEntry, UserModel, Recommendation
+from .models import DataEntry, UserModel, Recommendation, OPCDataEntry
 from django.db import models
 
 
@@ -23,6 +23,14 @@ class DataEntryAdmin(admin.ModelAdmin):
 	class Meta: 
 		model = DataEntry 
 
+class OPCDataEntryAdmin(admin.ModelAdmin): 
+	list_display = ['case_name', 'case_url', 'last_updated']
+	search_fields = ['case_name', 'sectors', 'topics', 'dispositions', 'complaint_types','last_updated']
+	filter_horizontal = ('positive_recommendations',) 
+
+	class Meta: 
+		model = OPCDataEntry 
+
 class UserModelAdmin(admin.ModelAdmin): 
 	list_display=['data_usage', 'location', 'industries']
 
@@ -31,5 +39,6 @@ class RecommendationModelAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(DataEntry, DataEntryAdmin)
+admin.site.register(OPCDataEntry, OPCDataEntryAdmin)
 admin.site.register(UserModel, UserModelAdmin)
 admin.site.register(Recommendation, RecommendationModelAdmin)
