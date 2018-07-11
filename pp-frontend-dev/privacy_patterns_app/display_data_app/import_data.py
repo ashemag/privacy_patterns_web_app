@@ -84,23 +84,27 @@ class Importer:
 					case_name = row['Case Name']
 					case_url, case_number, last_updated = row['Case URL'], row['Case Number'], row['Last Updated'], 
 					sectors, complaint_types, topics = row['Sectors'], row['Complaint Types'], row['Topics']
-					dispositions, principle_ids_raw = row['Dispositions'], row['Principle']
-
+					dispositions, principle_ids_raw = row['Dispositions'], row['GAPP Principles']
+					csa_principles = row['CSA Principle']
 					principle_ids = [x.strip() for x in principle_ids_raw.split(';')]
-						
+					if principle_ids == ['']:
+						continue
+
 					new_entry = OPCDataEntry(case_name = case_name, case_url = case_url, last_updated=last_updated, \
 											case_number=case_number, sectors=sectors, complaint_types=complaint_types, \
-											topics=topics, dispositions=dispositions)
+											topics=topics, dispositions=dispositions, principle=csa_principles)
 					new_entry.id = i + 1 
 					new_entry.save() 
-					# pos_recs = [Recommendation.objects.get(id=i) for i in principle_ids]
+					print(principle_ids)
 
-					# print(pos_Recs)
-					# pos_recs1 = [(rec.id, int(rec.priority_number)) for rec in pos_recs]
-					# pos_recs2 = sorted(pos_recs1, key=lambda tup: tup[1], reverse=True) 
-					# for (rec_id, priority) in pos_recs2: 
-					# 	new_entry.positive_recommendations.add(Recommendation.objects.get(id=rec_id))
-					# 	new_entry.save() 
+
+					pos_recs = [Recommendation.objects.get(principle_id=i) for i in principle_ids]
+
+					pos_recs1 = [(rec.id, int(rec.priority_number)) for rec in pos_recs]
+					pos_recs2 = sorted(pos_recs1, key=lambda tup: tup[1], reverse=True) 
+					for (rec_id, priority) in pos_recs2: 
+						new_entry.positive_recommendations.add(Recommendation.objects.get(id=rec_id))
+						new_entry.save() 
 
 			if REPLACE: 
 				OPCDataEntry.objects.all().delete() 

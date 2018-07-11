@@ -16,6 +16,13 @@
         <td>
             <a href="{{ entry.case_url }}" target="blank"> {{ entry.case_name }} </a>
         </td>
+        <td>
+            {% for rec in entry.positive_recommendations.all %}
+            <p>
+                {{rec.text | safe}}
+            </p>
+            {% endfor %}
+        </td>
     </tr>
     {% endfor %}
 </table>
